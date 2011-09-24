@@ -53,7 +53,24 @@ If you find a bug or want to suggest a feature, please tell me.
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
-Tradu��o livre
+Traducao livre
+
+Após utilizar este plugin em um projeto comercial, percebi que não havia suporte ao Vimeo.
+Como a alteração para oferecer este recurso é bastante simples, alterei o arquivo videobox.js e enviei o 
+trecho para o autor do plugin. Como não obtive nenhuma resposta e o projeto não é atualizado desde 2009
+e esta licenciado sob a MIT, resolvi disponibilizar esta versão atualizada.
+
+Originalmente suporta
+
+Youtube
+Metacafe
+Google Video
+iFilm (Esta tendo problemas)
+Custom Flash
+
+Suporte adicionado recentemente
+
+Vimeo
 
 
 
