@@ -109,6 +109,15 @@ var Videobox = {
 			this.so.addVariable("flvbaseclip", this.videoID+"&");
 			this.so.addParam("wmode", "transparent");
 		}
+                else if (sLinkHref.match(/vimeo\.com/i)) {
+                    this.flash = true;
+                    var hRef = sLinkHref;
+                    var videoId = hRef.split('http://vimeo.com/');
+                    this.videoID = videoId[1];                       
+                    this.so = new SWFObject("http://vimeo.com/moogaloop.swf?clip_id=" + this.videoID , "flvvideo", this.options.contentsWidth, this.options.contentsHeight, "0", "#000");
+                    this.so.addVariable("flvbaseclip", this.videoID+"&");
+                    this.so.addParam("wmode", "transparent");
+                }
 		else if (sLinkHref.match(/\.mov/i)) {
 		  this.flash = false;
 			if (navigator.plugins && navigator.plugins.length) {
